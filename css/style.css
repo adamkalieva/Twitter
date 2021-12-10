@@ -26,12 +26,6 @@
     grid-template-rows: 1fr 1fr;
 }
 
-
-
-
-
-
-
 .layout{
     display: grid;
     grid-template-columns: 250px auto 350px;
@@ -60,18 +54,122 @@
     /* position: fixed, left; */
     align-items: center;
     flex-direction: column;
-    
+
+
 
 }
 
+.sidebar-menu__item--active {
+    color: #1da0f2;
+
+  }
 .side-bar-item img{
     width: 60px;
     height: 60px;
 }
+.btn-delete, .btn-edit{
+    background: transparent;
+    border: none;
+}
+.btn-delete img, .btn-edit img{
+width: 30px;
+}
 .btn-btn-primary{
     position:sticky
+}
+.card-body {
+    background: rgba(29, 161, 242, 0.1);
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
 }
 .tweet-photo {
     width: 65px;
     height: 65px;
+    border-radius: 20px;
 }
+
+.trends-for-you {
+    border-radius: 15px;
+    background: white;
+}
+.trends-for-you__block {
+    border-bottom: 1px solid #e6ecf0;
+    padding: 10px 15px;
+}
+.trends-for-you__heading {
+    font-size: 19px;
+    font-weight: bold;
+    color: #14171a;
+}
+.trends-for-you__meta-information {
+    font-style: 13px;
+    font-weight: 300;
+    color: #657786;
+}
+.trends-for-you__trend-name {
+font-size: 15px;
+color: #14171a;
+font-weight: bold;
+}
+.who-to-follow {
+    background: white;
+    border-radius: 15px;
+  }
+  
+  
+  .who-to-follow__block {
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+  }
+  
+  .who-to-follow__block:last-child {
+    border-bottom: none;
+  }
+  
+  .who-to-follow__author-logo {
+    width: 49px;
+    height: 49px;
+    border-radius: 50px;
+    margin-right: 10px;
+  }
+  
+  .who-to-follow__author-slug {
+    color: #657786;
+    font-size: 15px;
+  }
+  
+  .who-to-follow__author-name {
+    font-size: 15px;
+    font-weight: 700;
+  }
+  
+  .who-to-follow__content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .who-to-follow__heading {
+    font-size: 19px;
+    font-weight: bold;
+    color: #14171a;
+  }
+  
+  .who-to-follow__button {
+    border: 1px solid #1da0f2;
+    color: #1da0f2;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 15px;
+    padding: 5px;
+    min-width: 67px;
+    text-align: center;
+  }
+  
+  .who-to-follow__button:hover {
+    background: rgba(29, 161, 242, 0.1);
+    cursor: pointer;
+  }

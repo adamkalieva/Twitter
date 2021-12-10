@@ -34,7 +34,7 @@ async function addUsers(event) {
   getUsers(API);
   console.log(response);
 }
-addForm.on("submit");
+addForm.on("submit", addUsers);
 
 // ! READ
 let usersList = $(".users-list");
@@ -48,6 +48,7 @@ async function getUsers(API, showLoader = true) {
     $(".loader").css("display", "none");
   }
   users = response.data;
+  render(users);
 }
 
 function render(data) {
@@ -61,7 +62,7 @@ function render(data) {
              <p class="card-text card-email ">${item.email}</p>
     
              <h6>${item.password}</h6>
-             <a href="#" class="btn btn-primary">Go somewhere</a>
+             <a href="#" class="btn btn-primary">Write something</a>
              <button class="btn-like" id="${item.id}">
              <img src="https://cdn-icons.flaticon.com/png/512/1944/premium/1944515.png?token=exp=1639136806~hmac=6e90896daf7706356167f8c6b6130481"
              </button>
