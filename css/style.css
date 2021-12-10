@@ -1,0 +1,77 @@
+.add-users {
+    display: flex;
+    justify-content: center;
+}
+.add-form {
+    width: 500px;
+    text-align: center;
+}
+.search-block {
+    display: flex;
+    justify-content: center;
+}
+.search-inp {
+    width: 300px;
+}
+.card-title {
+    height: 70px;
+    overflow: hidden;
+}
+.card-description {
+    height: 100px;
+    overflow: hidden;
+}
+.card {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+
+
+
+
+
+
+.layout{
+    display: grid;
+    grid-template-columns: 250px auto 350px;
+    margin: 0 auto;
+ 
+}
+.layout__letf-sidebar{
+    width: 100px;
+    /* display: flex; */
+}
+.layout__right-sidebar{
+    position:fixed;
+
+}
+.navbar{
+    position: fixed;
+}
+.brand{
+    display: flex;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+}
+.side-bar-item{
+    display: flex !important;
+    /* position: fixed, left; */
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+
+.side-bar-item img{
+    width: 60px;
+    height: 60px;
+}
+.btn-btn-primary{
+    position:sticky
+}
+.tweet-photo {
+    width: 65px;
+    height: 65px;
+}
